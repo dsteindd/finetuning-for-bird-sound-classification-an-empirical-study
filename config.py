@@ -1,0 +1,34 @@
+MODELS_DIR = "./models/torch-classification"
+INITIAL_LEARNING_RATE = 1e-3
+
+FRAME_LENGTH = 2
+FRAME_HOP_LENGTH = 1
+NFFT = 1024
+NMELS = 128
+FFT_HOP_LENGTH = 256
+TARGET_SR = 44100
+
+# IMAGE_WIDTH = 128
+# IMAGE_HEIGHT = 128
+
+FOLDS_DIRECTORY = "./data/folds-all"
+METADATA_PATH_DOWNSTREAM = "./data/metadata-finetune.json"
+SPECIES_LIST_DOWNSTREAM = "./data/species-list-finetune.txt"
+FILE_PATHS_DOWNSTREAM = "./data/finetune-data"
+
+METADATA_PATH_PRETRAIN = "./data/metadata-pretrain.json"
+SPECIES_LIST_PRETRAIN = "./data/species-list-pretrain.txt"
+PRETRAIN_FILE_PATHS = "./data/pretrain-data"
+
+ESC50_DIR = "./data/ESC-50-master"
+
+FOLD_STATS = {
+    0: (-23.31501201400286, 6.715687035356467),
+    1: (-23.3504721418052, 6.683432397516892),
+    2: (-23.363019207831112, 6.681378176562906),
+    3: (-23.39463408753834, 6.645415198369359),
+    4: (-23.35163622728149, 6.698306629517171)
+}
+
+# Compute these!
+PRETRAIN_STATS = (-24.468645447727095, 14.973351646739026)
